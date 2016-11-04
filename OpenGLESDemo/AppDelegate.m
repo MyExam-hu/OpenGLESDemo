@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "MainViewController.h"
+#import "GLView.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window=[[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    MainViewController *vc =[[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
+    
+    UINavigationController * nav=[[UINavigationController alloc] initWithRootViewController:vc];
+//    nav.navigationBarHidden=YES;
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    if(self.window.rootViewController == nil){
+//        UIViewController* vc = [[UIViewController alloc]initWithNibName:nil bundle:nil];
+//        self.window.rootViewController = vc;
+//    }
+//    // Override point for customization after application launch.
+//    // 创建GLView添加到window中显示OpenGL ES内容
+//    GLView *glView = [[GLView alloc] initWithFrame:self.window.bounds];
+//    [self.window addSubview:glView];
+//    
+//    [self.window makeKeyAndVisible];
     return YES;
 }
 
