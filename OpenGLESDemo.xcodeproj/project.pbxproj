@@ -22,6 +22,8 @@
 		B44B39EB1DC9E40F00F90BA6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44B39EA1DC9E40F00F90BA6 /* CoreGraphics.framework */; };
 		B44B39ED1DC9E41700F90BA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44B39EC1DC9E41700F90BA6 /* Foundation.framework */; };
 		B44B39EF1DC9E41E00F90BA6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44B39EE1DC9E41E00F90BA6 /* UIKit.framework */; };
+		B4686A691DD0742E008A45A8 /* AGLKView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4686A661DD0742E008A45A8 /* AGLKView.m */; };
+		B4686A6A1DD0742E008A45A8 /* AGLKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4686A681DD0742E008A45A8 /* AGLKViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,10 @@
 		B44B39EA1DC9E40F00F90BA6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B44B39EC1DC9E41700F90BA6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B44B39EE1DC9E41E00F90BA6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B4686A651DD0742E008A45A8 /* AGLKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLKView.h; sourceTree = "<group>"; };
+		B4686A661DD0742E008A45A8 /* AGLKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLKView.m; sourceTree = "<group>"; };
+		B4686A671DD0742E008A45A8 /* AGLKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLKViewController.h; sourceTree = "<group>"; };
+		B4686A681DD0742E008A45A8 /* AGLKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLKViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,7 @@
 		B44B39BC1DC9BAA000F90BA6 /* OpenGLESDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B4686A641DD0742E008A45A8 /* AGLKit */,
 				B44B39C01DC9BAA000F90BA6 /* AppDelegate.h */,
 				B44B39C11DC9BAA000F90BA6 /* AppDelegate.m */,
 				B44B39D41DC9BAC800F90BA6 /* MainViewController.h */,
@@ -122,6 +129,17 @@
 				B44B39E31DC9DB9400F90BA6 /* OpenGLES.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4686A641DD0742E008A45A8 /* AGLKit */ = {
+			isa = PBXGroup;
+			children = (
+				B4686A651DD0742E008A45A8 /* AGLKView.h */,
+				B4686A661DD0742E008A45A8 /* AGLKView.m */,
+				B4686A671DD0742E008A45A8 /* AGLKViewController.h */,
+				B4686A681DD0742E008A45A8 /* AGLKViewController.m */,
+			);
+			path = AGLKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +217,10 @@
 				B44B39C21DC9BAA000F90BA6 /* AppDelegate.m in Sources */,
 				B44B39E01DC9DA0A00F90BA6 /* OpenGLES1ViewController.m in Sources */,
 				B44B39BF1DC9BAA000F90BA6 /* main.m in Sources */,
+				B4686A691DD0742E008A45A8 /* AGLKView.m in Sources */,
 				B44B39D71DC9BAC800F90BA6 /* MainViewController.m in Sources */,
 				B44B39E91DC9E10000F90BA6 /* GLView.m in Sources */,
+				B4686A6A1DD0742E008A45A8 /* AGLKViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
