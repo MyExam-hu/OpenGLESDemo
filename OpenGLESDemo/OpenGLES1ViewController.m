@@ -11,6 +11,8 @@
 
 @interface OpenGLES1ViewController ()
 
+@property NSString *myName;
+
 @end
 
 @implementation OpenGLES1ViewController
