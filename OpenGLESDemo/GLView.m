@@ -156,6 +156,7 @@ const GLubyte Indices[]= {
     rot += 2;
 }
 
+
 // 让它按设备帧率进行渲染
 - (void)setupDisplayLink {
     CADisplayLink* displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(render:)];

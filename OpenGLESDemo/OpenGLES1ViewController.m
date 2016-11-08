@@ -65,6 +65,18 @@ static const SceneVertex vertices[] =
                  sizeof(vertices), // Number of bytes to copy
                  vertices,         // Address of bytes to copy
                  GL_STATIC_DRAW);  // Hint: cache in GPU memory
+    
+    // Setup texture
+    CGImageRef imageRef =
+    [[UIImage imageNamed:@"leaves.gif"] CGImage];
+    
+    GLKTextureInfo *textureInfo = [GLKTextureLoader
+                                   textureWithCGImage:imageRef
+                                   options:nil
+                                   error:NULL];
+    
+    self.baseEffect.texture2d0.name = textureInfo.name;
+    self.baseEffect.texture2d0.target = textureInfo.target;
 }
 
 

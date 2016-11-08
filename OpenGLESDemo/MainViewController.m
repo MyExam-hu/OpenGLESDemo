@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "OpenGLES1ViewController.h"
+#import "OpenGLES_Ch3_1ViewController.h"
 
 @interface MainViewController ()
 
@@ -27,8 +28,13 @@
 }
 
 - (IBAction)OpenGLES1Click:(UIButton *)sender {
-    OpenGLES1ViewController *vc=[[OpenGLES1ViewController alloc] initWithNibName:@"OpenGLES1ViewController" bundle:nil];
-    [self.navigationController pushViewController:vc animated:YES];
+    if (sender.tag==1) {
+        OpenGLES1ViewController *vc=[[OpenGLES1ViewController alloc] initWithNibName:@"OpenGLES1ViewController" bundle:nil];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (sender.tag==2){
+        OpenGLES_Ch3_1ViewController *vc=[[OpenGLES_Ch3_1ViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 
