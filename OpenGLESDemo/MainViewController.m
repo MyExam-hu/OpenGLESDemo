@@ -29,12 +29,6 @@ static void *EOCMYAlertViewKey=@"EOCMYAlertViewKey";
     NSLog(@"23333");
 }
 
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    NSString *string=@"TTTTHJKjhkjhk";
-    [string lowercaseString];
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -84,12 +78,12 @@ static void *EOCMYAlertViewKey=@"EOCMYAlertViewKey";
     NSLog(@"dict.date=%@",dict.date);
     
     //替换两个方法的实现达到输出测试结果的目的(作用范围,整个运行期)
-//    Method originalMethod=class_getInstanceMethod([NSString class], @selector(lowercaseString));
-//    Method swappedMethod=class_getInstanceMethod([NSString class], @selector(eoc_myLowercaseString));
-//    method_exchangeImplementations(originalMethod, swappedMethod);
-//    
-//    NSString *string=@"TTTTHJKjhkjhk";
-//    [string lowercaseString];
+    Method originalMethod=class_getInstanceMethod([NSString class], @selector(lowercaseString));
+    Method swappedMethod=class_getInstanceMethod([NSString class], @selector(eoc_myLowercaseString));
+    method_exchangeImplementations(originalMethod, swappedMethod);
+    
+    NSString *string=@"TTTTHJKjhkjhk";
+    [string lowercaseString];
 }
 
 -(void)loadAlertView{

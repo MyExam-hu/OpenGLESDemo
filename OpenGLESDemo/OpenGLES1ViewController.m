@@ -37,14 +37,6 @@ static const SceneVertex vertices[] =
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    //替换两个方法的实现达到输出测试结果的目的
-    Method originalMethod=class_getInstanceMethod([NSString class], @selector(lowercaseString));
-    Method swappedMethod=class_getInstanceMethod([NSString class], @selector(eoc_myLowercaseString));
-    method_exchangeImplementations(originalMethod, swappedMethod);
-    
-    NSString *string=@"TTTTHJKjhkjhk";
-    [string lowercaseString];
     // Do any additional setup after loading the view from its nib.
 //    GLView *view=[[GLView alloc] initWithFrame:self.view.frame];
 //    [self.view addSubview:view];
