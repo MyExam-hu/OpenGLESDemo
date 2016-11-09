@@ -10,8 +10,11 @@
 #import "OpenGLES1ViewController.h"
 #import "OpenGLES_Ch3_1ViewController.h"
 #import "clsExam.h"
+#import <objc/runtime.h>
 
-@interface MainViewController ()
+static void *EOCMYAlertViewKey=@"EOCMYAlertViewKey";
+
+@interface MainViewController ()<UIAlertViewDelegate>
 
 @property (nonatomic, readwrite, copy) NSString *myName;
 
@@ -65,7 +68,31 @@
     
     NSSet *setB=[set copy];
     NSLog(@"setB=%@",setB);
+    
+    //关联对象的使用,慎用,需要注意循环引用环
+    [self loadAlertView];
+    
 }
+
+-(void)loadAlertView{
+    UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Question" message:@"2333" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Submit", nil];
+    void (^block)(NSInteger) = ^(NSInteger btnIndex){
+        if (btnIndex==0) {
+            NSLog(@"0000");
+        }else{
+            NSLog(@"other");
+        }
+    };
+    objc_setAssociatedObject(alert, EOCMYAlertViewKey, block, OBJC_ASSOCIATION_COPY);
+    [alert show];
+}
+
+#pragma mark - UIAlertViewDelegate
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex NS_DEPRECATED_IOS(2_0, 9_0){
+    void (^block)(NSInteger)=objc_getAssociatedObject(alertView, EOCMYAlertViewKey);
+    block(buttonIndex);
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
