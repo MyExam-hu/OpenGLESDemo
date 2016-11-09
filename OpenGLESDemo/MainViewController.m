@@ -73,6 +73,7 @@ static void *EOCMYAlertViewKey=@"EOCMYAlertViewKey";
     //关联对象的使用,慎用,需要注意循环引用环
     [self loadAlertView];
     
+    //用C写实现OC的Get方法和Set方法
     EOCAutoDictionary *dict=[EOCAutoDictionary new];
     dict.date=[NSDate dateWithTimeIntervalSince1970:475372800];
     NSLog(@"dict.date=%@",dict.date);
