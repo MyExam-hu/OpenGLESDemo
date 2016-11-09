@@ -26,6 +26,7 @@
 		B4520B591DD183560023E430 /* OpenGLES_Ch3_1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4520B581DD183560023E430 /* OpenGLES_Ch3_1ViewController.m */; };
 		B4520B5E1DD183810023E430 /* AGLKContext.m in Sources */ = {isa = PBXBuildFile; fileRef = B4520B5A1DD183810023E430 /* AGLKContext.m */; };
 		B4520B5F1DD183810023E430 /* AGLKVertexAttribArrayBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = B4520B5B1DD183810023E430 /* AGLKVertexAttribArrayBuffer.m */; };
+		B45228F71DD2C86F0094C8C8 /* clsExam.m in Sources */ = {isa = PBXBuildFile; fileRef = B45228F61DD2C86F0094C8C8 /* clsExam.m */; };
 		B4686A691DD0742E008A45A8 /* AGLKView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4686A661DD0742E008A45A8 /* AGLKView.m */; };
 		B4686A6A1DD0742E008A45A8 /* AGLKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4686A681DD0742E008A45A8 /* AGLKViewController.m */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,8 @@
 		B4520B5B1DD183810023E430 /* AGLKVertexAttribArrayBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLKVertexAttribArrayBuffer.m; sourceTree = "<group>"; };
 		B4520B5C1DD183810023E430 /* AGLKContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLKContext.h; sourceTree = "<group>"; };
 		B4520B5D1DD183810023E430 /* AGLKVertexAttribArrayBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLKVertexAttribArrayBuffer.h; sourceTree = "<group>"; };
+		B45228F51DD2C86F0094C8C8 /* clsExam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clsExam.h; sourceTree = "<group>"; };
+		B45228F61DD2C86F0094C8C8 /* clsExam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clsExam.m; sourceTree = "<group>"; };
 		B4686A651DD0742E008A45A8 /* AGLKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLKView.h; sourceTree = "<group>"; };
 		B4686A661DD0742E008A45A8 /* AGLKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLKView.m; sourceTree = "<group>"; };
 		B4686A671DD0742E008A45A8 /* AGLKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLKViewController.h; sourceTree = "<group>"; };
@@ -119,6 +122,8 @@
 				B44B39CB1DC9BAA000F90BA6 /* LaunchScreen.storyboard */,
 				B44B39CE1DC9BAA000F90BA6 /* Info.plist */,
 				B44B39BD1DC9BAA000F90BA6 /* Supporting Files */,
+				B45228F51DD2C86F0094C8C8 /* clsExam.h */,
+				B45228F61DD2C86F0094C8C8 /* clsExam.m */,
 			);
 			path = OpenGLESDemo;
 			sourceTree = "<group>";
@@ -239,6 +244,7 @@
 				B4520B591DD183560023E430 /* OpenGLES_Ch3_1ViewController.m in Sources */,
 				B44B39BF1DC9BAA000F90BA6 /* main.m in Sources */,
 				B4520B5E1DD183810023E430 /* AGLKContext.m in Sources */,
+				B45228F71DD2C86F0094C8C8 /* clsExam.m in Sources */,
 				B4686A691DD0742E008A45A8 /* AGLKView.m in Sources */,
 				B44B39D71DC9BAC800F90BA6 /* MainViewController.m in Sources */,
 				B44B39E91DC9E10000F90BA6 /* GLView.m in Sources */,

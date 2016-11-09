@@ -12,14 +12,23 @@
 
 @interface MainViewController ()
 
+@property (nonatomic, readwrite, copy) NSString *myName;
+
 @end
 
 @implementation MainViewController
 
+-(void)setMyName:(NSString *)myName{
+    _myName=myName;
+    NSLog(@"23333");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
+//    self.myName=@"233333";
+    //不会调用set方法，慎用
+    _myName=@"233333";
 }
 
 - (void)didReceiveMemoryWarning {
