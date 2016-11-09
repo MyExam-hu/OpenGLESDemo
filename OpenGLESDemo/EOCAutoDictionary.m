@@ -29,6 +29,7 @@
     return self;
 }
 
+//动态方法解析函数
 +(BOOL)resolveInstanceMethod:(SEL)sel{
     NSString *selectorString=NSStringFromSelector(sel);
     if ([selectorString hasPrefix:@"set"]) {

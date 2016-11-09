@@ -12,6 +12,7 @@
 #import "clsExam.h"
 #import <objc/runtime.h>
 #import "EOCAutoDictionary.h"
+#import "NSString+EOCMyAdditions.h"
 
 static void *EOCMYAlertViewKey=@"EOCMYAlertViewKey";
 
@@ -78,6 +79,13 @@ static void *EOCMYAlertViewKey=@"EOCMYAlertViewKey";
     dict.date=[NSDate dateWithTimeIntervalSince1970:475372800];
     NSLog(@"dict.date=%@",dict.date);
     
+    //替换两个方法的实现达到输出测试结果的目的
+    Method originalMethod=class_getInstanceMethod([NSString class], @selector(lowercaseString));
+    Method swappedMethod=class_getInstanceMethod([NSString class], @selector(eoc_myLowercaseString));
+    method_exchangeImplementations(originalMethod, swappedMethod);
+    
+    NSString *string=@"TTTTHJKjhkjhk";
+    [string lowercaseString];
 }
 
 -(void)loadAlertView{

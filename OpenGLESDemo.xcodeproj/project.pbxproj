@@ -28,6 +28,7 @@
 		B4520B5F1DD183810023E430 /* AGLKVertexAttribArrayBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = B4520B5B1DD183810023E430 /* AGLKVertexAttribArrayBuffer.m */; };
 		B45228F71DD2C86F0094C8C8 /* clsExam.m in Sources */ = {isa = PBXBuildFile; fileRef = B45228F61DD2C86F0094C8C8 /* clsExam.m */; };
 		B45228FA1DD302E60094C8C8 /* EOCAutoDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = B45228F91DD302E60094C8C8 /* EOCAutoDictionary.m */; };
+		B45228FE1DD31B9F0094C8C8 /* NSString+EOCMyAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B45228FD1DD31B9F0094C8C8 /* NSString+EOCMyAdditions.m */; };
 		B4686A691DD0742E008A45A8 /* AGLKView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4686A661DD0742E008A45A8 /* AGLKView.m */; };
 		B4686A6A1DD0742E008A45A8 /* AGLKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4686A681DD0742E008A45A8 /* AGLKViewController.m */; };
 /* End PBXBuildFile section */
@@ -65,6 +66,8 @@
 		B45228F61DD2C86F0094C8C8 /* clsExam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clsExam.m; sourceTree = "<group>"; };
 		B45228F81DD302E60094C8C8 /* EOCAutoDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOCAutoDictionary.h; sourceTree = "<group>"; };
 		B45228F91DD302E60094C8C8 /* EOCAutoDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOCAutoDictionary.m; sourceTree = "<group>"; };
+		B45228FC1DD31B9F0094C8C8 /* NSString+EOCMyAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EOCMyAdditions.h"; sourceTree = "<group>"; };
+		B45228FD1DD31B9F0094C8C8 /* NSString+EOCMyAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EOCMyAdditions.m"; sourceTree = "<group>"; };
 		B4686A651DD0742E008A45A8 /* AGLKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLKView.h; sourceTree = "<group>"; };
 		B4686A661DD0742E008A45A8 /* AGLKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLKView.m; sourceTree = "<group>"; };
 		B4686A671DD0742E008A45A8 /* AGLKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLKViewController.h; sourceTree = "<group>"; };
@@ -129,6 +132,8 @@
 				B45228F61DD2C86F0094C8C8 /* clsExam.m */,
 				B45228F81DD302E60094C8C8 /* EOCAutoDictionary.h */,
 				B45228F91DD302E60094C8C8 /* EOCAutoDictionary.m */,
+				B45228FC1DD31B9F0094C8C8 /* NSString+EOCMyAdditions.h */,
+				B45228FD1DD31B9F0094C8C8 /* NSString+EOCMyAdditions.m */,
 			);
 			path = OpenGLESDemo;
 			sourceTree = "<group>";
@@ -245,6 +250,7 @@
 			files = (
 				B44B39C21DC9BAA000F90BA6 /* AppDelegate.m in Sources */,
 				B44B39E01DC9DA0A00F90BA6 /* OpenGLES1ViewController.m in Sources */,
+				B45228FE1DD31B9F0094C8C8 /* NSString+EOCMyAdditions.m in Sources */,
 				B4520B5F1DD183810023E430 /* AGLKVertexAttribArrayBuffer.m in Sources */,
 				B4520B591DD183560023E430 /* OpenGLES_Ch3_1ViewController.m in Sources */,
 				B44B39BF1DC9BAA000F90BA6 /* main.m in Sources */,
