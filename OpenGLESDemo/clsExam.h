@@ -10,4 +10,7 @@
 
 @interface clsExam : NSObject
 
+@property (copy, nonatomic) NSString *youName;
+@property (copy, nonatomic) NSString *myName;
+
 @end

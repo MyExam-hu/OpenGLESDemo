@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "OpenGLES1ViewController.h"
 #import "OpenGLES_Ch3_1ViewController.h"
+#import "clsExam.h"
 
 @interface MainViewController ()
 
@@ -23,12 +24,27 @@
     NSLog(@"23333");
 }
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 //    self.myName=@"233333";
     //不会调用set方法，慎用
     _myName=@"233333";
+    
+    NSString *foo=@"2333";
+    NSString *bar=[NSString stringWithFormat:@"233%@",@"3"];
+    BOOL equalA=(foo == bar);
+    BOOL equalB=[foo isEqualToString:bar];
+    BOOL equalC=[foo isEqual:bar];
+    NSLog(@"equalA=%d,equalB=%d,equalC=%d",equalA,equalB,equalC);
+    
+    clsExam *cls1=[[clsExam alloc] init];
+    cls1.youName=@"233";
+    clsExam *cls2=[[clsExam alloc] init];
+    cls2.youName=@"233";
+    NSLog(@"%d",[cls1 isEqual:cls2]);
 }
 
 - (void)didReceiveMemoryWarning {
