@@ -45,6 +45,26 @@
     clsExam *cls2=[[clsExam alloc] init];
     cls2.youName=@"233";
     NSLog(@"%d",[cls1 isEqual:cls2]);
+    
+    NSMutableSet *set=[NSMutableSet new];
+    NSMutableArray *arrayA=[@[@1,@2] mutableCopy];
+    [set addObject:arrayA];
+    NSLog(@"set=%@",set);
+    
+    NSMutableArray *arrayB=[@[@1,@2] mutableCopy];
+    [set addObject:arrayB];
+    NSLog(@"set=%@",set);
+    
+    NSMutableArray *arrayC=[@[@1] mutableCopy];
+//    [set addObject:[arrayC copy]];
+    [set addObject:arrayC];
+    NSLog(@"set=%@",set);
+    
+    [arrayC addObject:@2];
+    NSLog(@"set=%@",set);
+    
+    NSSet *setB=[set copy];
+    NSLog(@"setB=%@",setB);
 }
 
 - (void)didReceiveMemoryWarning {
