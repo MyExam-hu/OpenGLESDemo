@@ -11,6 +11,7 @@
 #import "OpenGLES_Ch3_1ViewController.h"
 #import "clsExam.h"
 #import <objc/runtime.h>
+#import "EOCAutoDictionary.h"
 
 static void *EOCMYAlertViewKey=@"EOCMYAlertViewKey";
 
@@ -71,6 +72,10 @@ static void *EOCMYAlertViewKey=@"EOCMYAlertViewKey";
     
     //关联对象的使用,慎用,需要注意循环引用环
     [self loadAlertView];
+    
+    EOCAutoDictionary *dict=[EOCAutoDictionary new];
+    dict.date=[NSDate dateWithTimeIntervalSince1970:475372800];
+    NSLog(@"dict.date=%@",dict.date);
     
 }
 
