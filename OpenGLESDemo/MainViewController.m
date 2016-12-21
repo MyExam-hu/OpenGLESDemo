@@ -118,6 +118,8 @@ static void *EOCMYAlertViewKey=@"EOCMYAlertViewKey";
     }else if (sender.tag==2){
         OpenGLES_Ch3_1ViewController *vc=[[OpenGLES_Ch3_1ViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
+    }else if (sender.tag==3){
+        
     }
 }
 
