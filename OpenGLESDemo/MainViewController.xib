@@ -33,12 +33,21 @@
                         <action selector="OpenGLES1Click:" destination="-1" eventType="touchUpInside" id="BPs-mY-0Ok"/>
                     </connections>
                 </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWB-di-Tkl">
+                    <rect key="frame" x="160" y="418.5" width="55" height="30"/>
+                    <state key="normal" title="Button3"/>
+                    <connections>
+                        <action selector="OpenGLES1Click:" destination="-1" eventType="touchUpInside" id="9CC-BC-cBS"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="due-6r-ZRA" firstAttribute="centerX" secondItem="b1o-V8-7Lc" secondAttribute="centerX" id="13J-Nl-vwK"/>
                 <constraint firstItem="b1o-V8-7Lc" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="4ri-kU-EkF"/>
+                <constraint firstItem="PWB-di-Tkl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9O6-ap-hXB"/>
                 <constraint firstItem="b1o-V8-7Lc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Exh-lF-eUy"/>
+                <constraint firstItem="PWB-di-Tkl" firstAttribute="top" secondItem="due-6r-ZRA" secondAttribute="bottom" constant="20" id="Zia-UP-Khz"/>
                 <constraint firstItem="due-6r-ZRA" firstAttribute="top" secondItem="b1o-V8-7Lc" secondAttribute="bottom" constant="20" id="uJr-d9-su9"/>
             </constraints>
             <point key="canvasLocation" x="26" y="53"/>
